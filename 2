@@ -1,0 +1,21 @@
+listaNome  = input("Digite três nomes separados por vírgulas: ").split(",")
+print("\nSubstitua um nome")
+esc = int(input ("Digite 1 para substituir o primeiro nome\nDigite 2 para substituir o segundo nome\nDigite 3 para substituir o terceiro nome\n"))
+
+if esc == 1:
+    novoNome = input("Digite o novo nome: ")
+    listaNome[0] = novoNome
+    print("A nova lista é:")
+    print(listaNome)
+
+elif esc == 2:
+    novoNome = input("Digite o novo nome: ")
+    listaNome[1] = novoNome
+    print("A nova lista é:")
+    print(listaNome)
+
+elif esc == 3:
+    novoNome = input("Digite o novo nome: ")
+    listaNome[2] = novoNome
+    print("A nova lista é:")
+    print(listaNome)

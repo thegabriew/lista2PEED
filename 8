@@ -1,0 +1,13 @@
+reps = int(input("Quantas chaves serão adicionadas?\n"))
+dic = {}
+
+def add ():
+    chave = str(input("Insira a chave: "))
+    valor = input("Insira um valor: ")
+    dic[chave] = valor
+
+for i in range(reps):
+    add()
+
+if 'idade' in dic:
+    print(dic['idade'])

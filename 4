@@ -1,0 +1,11 @@
+conjunto = []
+
+conjunto = input("Digite 5 números separados por vírgula: ").split(",")
+conjunto = [int (v) for v in conjunto]
+
+esc = int(input("Digite um número para ser excluído: "))
+
+if esc in conjunto:
+    conjunto.remove(esc)
+        
+print(conjunto)

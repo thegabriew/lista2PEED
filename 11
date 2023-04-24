@@ -1,0 +1,9 @@
+lista = []
+
+for i in range (10):
+    n = int(input(f'Digite {i+1}º valor da lista: '))
+    lista.append(n)
+
+for i in range(10):
+    if i % 2 == 0:
+        print(f"O valor {i} é: ",lista[i])

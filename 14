@@ -1,9 +1,10 @@
 conjunto = []
 
-conjunto = input("Digite 5 números separados por vírgula: ").split(",")
-conjunto = [int (n) for n in conjunto]
+for i in range (5):
+    n = int(input(f'Digite o {i+1}º valor: '))
+    conjunto.append(n)
 
 if 3 in conjunto:
-    print("O número 3 está no conjunto")
+    print("\nO número 3 está no conjunto")
 else:
-    print("O número 3 não está no conjunto")
+    print("\nO número 3 não está no conjunto")

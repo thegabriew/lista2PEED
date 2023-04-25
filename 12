@@ -1,0 +1,13 @@
+# Pedindo ao usuário para digitar 3 nomes
+nome1 = input("Digite o primeiro nome: ")
+nome2 = input("Digite o segundo nome: ")
+nome3 = input("Digite o terceiro nome: ")
+
+# Criando a tupla com os nomes digitados
+nomes = (nome1, nome2, nome3)
+
+# Verificando se o nome 'Maria' está presente na tupla
+if 'Maria' in nomes:
+    print("O nome 'Maria' está presente na tupla!")
+else:
+    print("O nome 'Maria' não está presente na tupla.")

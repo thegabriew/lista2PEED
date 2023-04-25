@@ -1,0 +1,16 @@
+grafo = {}
+
+while True:
+    vertices = input("Digite os dois vértices separados por vírgula (ou digite 'fim' para sair): ").split(",")
+    if vertices[0] == 'fim':
+        break
+    if vertices[0] not in grafo:
+        grafo[vertices[0]] = []
+    if vertices[1] not in grafo:
+        grafo[vertices[1]] = []
+    grafo[vertices[0]].append(vertices[1])
+    grafo[vertices[1]].append(vertices[0])
+
+print("Grafo:")
+for v in grafo:
+    print(v, ":", ", ".join(grafo[v]))

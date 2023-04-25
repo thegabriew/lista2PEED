@@ -1,0 +1,22 @@
+grafo = {}
+
+num_vertices = int(input("Digite o número de vértices do grafo: "))
+
+for i in range(num_vertices):
+    vertice = input(f"Digite o nome do vértice {i+1}: ")
+    grafo[vertice] = []
+
+num_arestas = int(input("Digite o número de arestas do grafo: "))
+
+for i in range(num_arestas):
+    v1, v2 = input(f"Digite os nomes dos vértices que formam a aresta {i+1}: ").split()
+    grafo[v1].append(v2)
+    grafo[v2].append(v1)
+
+print("Grafo criado:")
+print(grafo)
+
+if ('A', 'C') in [(a,b) for a in grafo for b in grafo[a]]:
+    print("A aresta ('A', 'C') está presente no grafo!")
+else:
+    print("A aresta ('A', 'C') não está presente no grafo.")
